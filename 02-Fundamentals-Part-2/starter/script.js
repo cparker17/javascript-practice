@@ -33,5 +33,22 @@ console.log(years);
 console.log(years.length);
 console.log(years.at(friends.length - 1));
 
+console.log('two\nlines');
+console.log("one\
+long\
+line");
+console.log(`The newline character at the end of this line
+is included in this string`);
 
+//OBJECTS
+
+let student = {
+    firstName: 'Chris',
+    lastName: 'Parker',
+    age: 40,
+    school: 'WGU'
+};
+
+console.log(student.firstName);
+console.log(student['lastName']);
 
