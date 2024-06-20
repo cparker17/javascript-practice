@@ -13,7 +13,7 @@ function calcAge(birthYear) {
             console.log(str);
         }
         console.log(millennial);
-    };
+    }
 
     printAge();
     return age;
@@ -21,4 +21,22 @@ function calcAge(birthYear) {
 
 const firstName = 'Chris';
 calcAge(1984);
+
+let age = 39;
+let oldAge = age;
+age = 40;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+    name: 'Chris',
+    age: 40
+}
+const friend = me;
+friend.age = 27;
+console.log('Friend: ', friend);
+console.log('Me: ', me);
+
+
+
 
