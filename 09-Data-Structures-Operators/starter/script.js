@@ -12,11 +12,11 @@ const restaurant = {
     starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
     mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-    order: function (starterIndex, mainIndex) {
+    order(starterIndex, mainIndex) {
         return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
     },
 
-    orderDelivery: function (obj) {
+    orderDelivery(obj) {
         console.log(obj);
     },
 
@@ -104,3 +104,23 @@ const menu2 = [...restaurant.starterMenu, ...restaurant.mainMenu];
 for (const item of menu2) {
     console.log(item);
 }
+
+const values = Object.values(openingHours);
+console.log(values);
+
+console.log(Object.entries(openingHours));
+
+// SETS
+const orderSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
+console.log(orderSet);
+console.log(orderSet.size);
+console.log(orderSet.has('Pizza'));
+console.log(orderSet.has('Bread'));
+orderSet.add('Garlic Bread');
+orderSet.add('Garlic Bread');
+orderSet.delete('Risotto');
+console.log(orderSet);
+
+const staff = ['Waiter', 'Chef', 'Manager', 'Waiter'];
+const staffDistinct = new Set(staff);
+console.log(staffDistinct);
